@@ -8,10 +8,36 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
+   <body class="page__body">
+    <header class="header">
+      <nav class="header__nav main-nav main-nav--is-close">
+        <a class="logo header__logo" href="index.html" aria-current="page">
+          <span class="visually-hidden">На главную страницу</span>
+          <picture>
+            <source type="image/svg+xml" width="170" height="36" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+            <source type="image/svg+xml" width="82" height="36" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <img class="logo__image" width="32" height="36" src="images/logo-mobile.svg" alt="Логотип магазина. Двойка в фиолетовом круге">
+          </picture>
+        </a>
+        <a class="main-nav__account" href="#">
+          <span class="visually-hidden">Войти в личный кабинет</span>
+        </a>
+        <a class="main-nav__basket" href="#">
+          <span class="visually-hidden">Корзина</span>
+        </a>
+        <button class="main-nav__btn btn-burger" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active" href="index.html" aria-current="page">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог&nbsp;продукции</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <h1>Страница для старта</h1>
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
     </main>
   </body>
 </html>

@@ -1,0 +1,31 @@
+.main-nav--is-close {
+  .main-nav__list {
+    display: none;
+  }
+
+  .main-nav__btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+    width: 16px;
+    height: 2px;
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+}
+
+.main-nav__account {
+  background-image: url("../../icons/account.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+}
+
+.main-nav__basket {
+  background-image: url("../../icons/basket.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+}
