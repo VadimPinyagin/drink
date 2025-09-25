@@ -1,3 +1,10 @@
+.main-nav{
+  width: 280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 120px 60px 60px 60px;
+  align-items: center;
+}
 .main-nav--is-close {
   .main-nav__list {
     display: none;
@@ -7,12 +14,12 @@
     content: "";
     display: block;
     position: absolute;
-    top: 9px;
-    left: 8px;
+    top: 24px;
+    left: 22px;
     width: 16px;
     height: 2px;
     background-color: #000000;
-    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+    box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000;
   }
 }
 
@@ -21,6 +28,8 @@
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
+  width: 60px;
+  height: 60px;
 }
 
 .main-nav__basket {
@@ -28,4 +37,6 @@
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
+   width: 60px;
+  height: 60px;
 }
