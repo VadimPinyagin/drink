@@ -1,3 +1,21 @@
 .slider{
+  position: relative;
   background-color: var(--slider-background);
+  padding-block: 20px;
 }
+
+.slider__arrow-right{
+ @include slider-arrow;
+ background-image: url('../../icons/arrow-slider-right.svg');
+ right: 3px;
+ top: 318px;
+}
+
+.slider__arrow-left{
+ @include slider-arrow;
+ background-image: url('../../icons/arrow-slider-left.svg');
+ background-repeat: no-repeat;
+ top: 318px;
+ left: 3px;
+}
+

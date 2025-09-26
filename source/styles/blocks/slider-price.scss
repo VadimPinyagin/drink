@@ -1,0 +1,30 @@
+.slider-price{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-block: 9px;
+}
+
+.slider-price__list{
+  @include list-reser;
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.slider-price__old{
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+  color: var(--base-primary);
+}
+
+.slider-price__new{
+  @include text-price;
+}
+
+.slider-price__button{
+  @include base-button-style;
+  padding-inline: 25px;
+  padding-block: 10px;
+}
