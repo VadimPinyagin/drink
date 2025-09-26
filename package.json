@@ -29,12 +29,15 @@
     "optimize:vector": "gulp optimizeVector"
   },
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
     "@htmlacademy/editorconfig-cli": "3.0.0",
     "@linthtml/linthtml": "0.9.6",
     "browser-sync": "3.0.2",
     "browserslist-to-esbuild": "2.1.1",
-    "eslint": "8.57.0",
+    "eslint": "^8.57.0",
     "eslint-config-htmlacademy": "10.0.1",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^16.4.0",
     "gulp": "4.0.2",
     "gulp-esbuild": "0.12.0",
     "gulp-html-bemlinter": "4.0.0",

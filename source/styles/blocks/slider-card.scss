@@ -1,9 +1,9 @@
-.slider-card{
+.slider-card {
   display: grid;
   grid-template-rows: repeat(5, auto);
 }
 
-.slider-card__title{
+.slider-card__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
@@ -13,18 +13,18 @@
   grid-area: 3/1;
 }
 
-.slider-card__new{
+.slider-card__new {
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
-  color: var(--base-primary);
+  color: var(--base-primary, #7859cf);
   text-align: center;
   margin: 0;
   padding-block: 5px;
 }
 
-.slider-card__description{
+.slider-card__description {
   text-align: center;
   margin: 0;
   padding-block: 10px;
