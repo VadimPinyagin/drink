@@ -20,7 +20,7 @@
   color: var(--base-white, #f3ebe1);
   border: none;
   border-radius: 4px;
-  background-color: var (--base-primary);
+  background-color: var(--base-primary, #7859cf);
 }
 
 @mixin slider-arrow {
