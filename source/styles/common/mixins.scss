@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-@mixin list-reser {
+@mixin list-reset {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -30,4 +30,10 @@
   height: 20px;
   background-repeat: no-repeat;
   position: absolute;
+}
+
+@mixin advantages-title-mobile{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
 }
