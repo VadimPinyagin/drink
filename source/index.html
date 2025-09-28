@@ -88,6 +88,37 @@
           </ul>
         </div>
       </section>
+      <section class="catalog">
+        <div class="container catalog__container">
+          <h2 class="catalog__title">Каталог</h2>
+          <p class="catalog__text">Каталог кофейных напитков</p>
+          <form class="filter catalog__filter">
+            <fieldset class="filter-price">
+            <legend class="filter-price__legend">Цена, ₽ :</legend>
+              <div class="filter-price__range">
+                <input class="filter-price__range" type="number" name="price-min" id="range-from" placeholder="0">
+                <label class="filter-price__from" for="range-from"></label>
+                <input class="filter-price__range" name="price-max" id="range-to" placeholder="900">
+                <label class="filter-price__to" for="range-to"></label>
+              </div>
+            </fieldset>
+            <fieldset class="filter-additive">
+              <legend>Наличие молока</legend>
+              <label class="filter-additive__label">Неважно</label>
+              <input class="filter-additive__radio" type="radio" name="additive" value="any">
+
+              <label class="filter-additive__label">Только животное</label>
+              <input class="filter-additive__radio" type="radio" name="additive" value="animal">
+
+              <label class="filter-additive__label">Только растительное</label>
+              <input class="filter-additive__radio" type="radio" name="additive" value="vegetable">
+
+              <label class="filter-additive__label">Без молока</label>
+              <input class="filter-additive__radio" type="radio" name="additive" value="without">
+            </fieldset>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 </html>
