@@ -1,6 +1,7 @@
-.advantages{
+.advantages {
   padding-block: 51px;
 }
+
 .advantages__title {
   margin-block: 0;
   font-weight: 700;
@@ -36,7 +37,7 @@
   row-gap: 6px;
 }
 
-.advantages-list__item--speed::before{
+.advantages-list__item--speed::before {
   content: "";
   display: block;
   width: 50px;
@@ -44,7 +45,7 @@
   background-image: url("../../icons/speed.svg");
 }
 
-.advantages-list__item--comfort::before{
+.advantages-list__item--comfort::before {
   content: "";
   display: block;
   width: 52px;
@@ -52,7 +53,7 @@
   background-image: url("../../icons/comfort.svg");
 }
 
-.advantages-list__item--cheerfulness::before{
+.advantages-list__item--cheerfulness::before {
   content: "";
   display: block;
   width: 52px;
@@ -60,7 +61,7 @@
   background-image: url("../../icons/cheerfulness.svg");
 }
 
-.advantages-list__item--ecology::before{
+.advantages-list__item--ecology::before {
   content: "";
   display: block;
   width: 52px;
