@@ -1,0 +1,10 @@
+.filter{
+  &__range {
+    .noUi-target {
+      background-color: red;
+      width: 280px;
+      height: 2px;
+      border: none;
+    }
+  }
+}
