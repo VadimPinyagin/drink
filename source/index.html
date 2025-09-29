@@ -119,11 +119,17 @@
               <label class="filter-additive__label" for="without">Без молока</label>
               <input class="filter-additive__radio" type="radio" name="additive" value="without" id="without">
             </fieldset>
-            <fieldset class="filter__switch-country switch-country">
-              <label class="switch-country__label">Бразилия
-                <input class="switch-country__input" type="checkbox">
-                <span class="toggle"></span>
-              </label>
+            <fieldset class="switch-country">
+              <legend class="filter__switch-country">Страна произрастания</legend>
+              <ul class="switch-country__list">
+                <li class="switch-country__item">
+                  <label class="switch-country__label" for="brazil">
+                    <input class="switch-country__input" id="brazil" type="checkbox">
+                    <span class="toggle"></span>
+                  </label>
+                  <span class="country">Бразилия</span>
+                </li>
+              </ul>
             </fieldset>
           </form>
         </div>
