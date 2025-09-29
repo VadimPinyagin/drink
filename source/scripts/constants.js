@@ -1,1 +1,1 @@
-export const sliderElement = document.querySelector('.filter-price__range');
+export const sliderElement = document.querySelector('.filter__range-scale');

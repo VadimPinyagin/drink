@@ -1,10 +1,30 @@
 .filter{
   &__range {
     .noUi-target {
-      background-color: red;
+      background-color: var(--light-gray, #e2e2e2);
       width: 280px;
       height: 2px;
       border: none;
     }
+    .noUi-handle {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid var(--base-primary, #7859cf);
+
+      &::after{
+        content:"";
+        display: block;
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-color: var(--base-white, #ffffff);
+        border-radius: 50%;
+        top: -1px;
+        left: -1px;
+      }
+    }
   }
 }
+
