@@ -97,11 +97,11 @@
             <legend class="filter__price-legend">Цена, ₽ :</legend>
               <div class="filter__range">
                 <div class="filter__range-scale"></div>
-                <label class="filter-price__from" for="min-num">
-                  <input class="filter-price__range" type="number" name="price-min" id="min-num" placeholder="0">
+                <label class="filter__price-from" for="min-num">
+                  <input class="filter__price-range" type="number" name="price-min" id="min-num" placeholder="0">
                 </label>
-                <label class="filter-price__to" for="max-num">
-                  <input class="filter-price__range" name="price-max" id="max-num" placeholder="900">
+                <label class="filter__price-to" for="max-num">
+                  <input class="filter__price-range" name="price-max" id="max-num" placeholder="900">
                 </label>
               </div>
             </fieldset>
@@ -124,13 +124,45 @@
               <ul class="switch-country__list">
                 <li class="switch-country__item">
                   <label class="switch-country__label" for="brazil">
-                    <input class="switch-country__input" id="brazil" type="checkbox">
+                    <input class="switch-country__input" id="brazil" name="brazil" type="checkbox">
                     <span class="toggle"></span>
                   </label>
                   <span class="country">Бразилия</span>
                 </li>
+                <li class="switch-country__item">
+                  <label class="switch-country__label" for="ethiopia">
+                    <input class="switch-country__input" id="ethiopia" name="ethiopia" type="checkbox">
+                    <span class="toggle"></span>
+                  </label>
+                  <span class="country">Эфиопия</span>
+                </li>
+                <li class="switch-country__item">
+                  <label class="switch-country__label" for="colombia">
+                    <input class="switch-country__input" id="colombia" name="colombia" type="checkbox">
+                    <span class="toggle"></span>
+                  </label>
+                  <span class="country">Колумбия</span>
+                </li>
+                <li class="switch-country__item">
+                  <label class="switch-country__label" for="costa-rica">
+                    <input class="switch-country__input" id="costa-rica" name="costa-rica" type="checkbox">
+                    <span class="toggle"></span>
+                  </label>
+                  <span class="country">Коста-Рика</span>
+                </li>
+                <li class="switch-country__item">
+                  <label class="switch-country__label" for="peru">
+                    <input class="switch-country__input" id="peru" name="peru" type="checkbox">
+                    <span class="toggle"></span>
+                  </label>
+                  <span class="country">Перу</span>
+                </li>
               </ul>
             </fieldset>
+            <div class="filter__button-wrapper">
+              <button class="button" type="submit">Применить</button>
+              <button class="button" type="reset">Сбросить</button>
+            </div>
           </form>
         </div>
       </section>
