@@ -1,1 +1,1 @@
-var e=document.querySelector(".filter-price__range");noUiSlider.create(e,{start:[0,900],connect:[!1,!0,!1],range:{min:0,max:1e3}});
+var t=document.querySelector(".filter__range-scale");function n(){let o={from:function(e){return Number(e)},to:function(e){return Math.round(e)}};noUiSlider.create(t,{start:[0,900],connect:!0,range:{min:0,max:1e3},format:o});let m=[document.getElementById("min-num"),document.getElementById("max-num")];t.noUiSlider.on("update",function(e,r){m[r].value=e[r]})}n();

@@ -1,1 +1,1 @@
-var e=document.querySelector(".filter-price__range");export{e as sliderElement};
+var e=document.querySelector(".filter__range-scale");export{e as sliderElement};
