@@ -37,3 +37,12 @@
   font-size: 18px;
   line-height: 32px;
 }
+
+@mixin fieldset-mobile-style {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}

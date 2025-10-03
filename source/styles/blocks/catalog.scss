@@ -1,0 +1,24 @@
+.catalog {
+  background-color: var(--smoky-white, #f8f8f8);
+  padding-block-start: 58px;
+}
+
+.catalog__title {
+  margin-block: 0;
+  padding-block-end: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--base-primary, #7859cf);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  margin-block: 0;
+  padding-block-end: 20px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+}
