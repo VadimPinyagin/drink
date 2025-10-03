@@ -106,19 +106,26 @@
                 </label>
               </div>
             </fieldset>
-            <fieldset class="filter-additive">
+            <fieldset class="filter__additive">
               <legend>Наличие молока</legend>
-              <label class="filter-additive__label" for="additive">Неважно</label>
-              <input class="filter-additive__radio" type="radio" name="additive" value="any" id="additive">
-
-              <label class="filter-additive__label" for="animal">Только животное</label>
-              <input class="filter-additive__radio" type="radio" name="additive" value="animal" id="animal">
-
-              <label class="filter-additive__label" for="vegetable">Только растительное</label>
-              <input class="filter-additive__radio" type="radio" name="additive" value="vegetable" id="vegetable">
-
-              <label class="filter-additive__label" for="without">Без молока</label>
-              <input class="filter-additive__radio" type="radio" name="additive" value="without" id="without">
+              <ul class="filter__additive-list">
+                <li class="filter__additive-item">
+                  <input class="filter__additive-radio" type="radio" name="additive" value="any" id="additive" checked>
+                  <label class="filter__additive-label" for="additive" >Неважно</label>
+                </li>
+                <li class="filter__additive-item">
+                  <input class="filter__additive-radio" type="radio" name="additive" value="animal" id="animal">
+                  <label class="filter__additive-label" for="animal">Только животное</label>
+                </li>
+                <li class="filter__additive-item">
+                  <input class="filter__additive-radio" type="radio" name="additive" value="vegetable" id="vegetable">
+                  <label class="filter__additive-label" for="vegetable">Только растительное</label>
+                </li>
+                <li class="filter__additive-item">
+                  <input class="filter__additive-radio" type="radio" name="additive" value="without" id="without">
+                  <label class="filter__additive-label" for="without">Без молока</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="switch-country">
               <legend class="filter__switch-country">Страна произрастания</legend>
