@@ -1,3 +1,7 @@
+.filter {
+  padding-block-end: 41px;
+}
+
 .filter__price {
   @include fieldset-mobile-style;
   padding-block-end: 32px;

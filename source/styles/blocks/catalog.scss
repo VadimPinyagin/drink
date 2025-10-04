@@ -22,3 +22,7 @@
   line-height: 36px;
   text-align: center;
 }
+
+.catalog__list {
+  @include list-reset;
+}
