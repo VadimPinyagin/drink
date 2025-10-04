@@ -1,6 +1,6 @@
 .filter__price {
   @include fieldset-mobile-style;
-  padding-inline-end: 32px;
+  padding-block-end: 32px;
 }
 
 .filter__range {
@@ -87,6 +87,10 @@
   padding-block-end: 19px;
 }
 
+.filter__additive-legend {
+  padding-block-end: 18px;
+}
+
 .filter__additive-list {
   @include list-reset;
   flex-direction: column;
@@ -96,15 +100,32 @@
 
 .filter__additive-item{
   display: flex;
+  column-gap: 10px;
 }
 
 .filter__additive-label {
   font-weight: 400;
 }
 
-.filter__additive-radio {
-  margin: 0;
+.filter__additive-radio[type="radio"] {
+  appearance: none;
+  position: relative;
+  display: block;
   width: 24px;
   height: 24px;
-  border-color: var(--base-primary, #7859cf);
+  margin: 0;
+  border: 2px solid var(--base-primary, #7859cf);
+  border-radius: 50%;
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: var(--base-primary, #7859cf);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
