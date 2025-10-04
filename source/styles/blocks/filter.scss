@@ -135,6 +135,7 @@
   padding: 0;
   display: grid;
   gap: 10px;
+  padding-block-end: 30px;
 }
 
 .filter__country-input {
@@ -191,4 +192,30 @@
 
 .filter__country-legend {
   padding-block-end: 18px;
+}
+
+.filter__country-submit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  .filter__country-button {
+    border: none;
+    border-radius: 4px;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 40px;
+  }
+
+  .filter__country-button[type="submit"] {
+    color: var(--base-white, #ffffff);
+    background-color: var(--base-primary, #7859cf);
+  }
+
+  .filter__country-button[type="reset"] {
+    color: var(--base-primary, #7859cf);
+    background-color: var(--base-white, #ffffff);
+  }
 }
