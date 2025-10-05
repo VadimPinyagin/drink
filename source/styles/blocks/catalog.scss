@@ -27,5 +27,6 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19px;
+  padding-block-start: 14px;
 }
