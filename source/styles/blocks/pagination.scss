@@ -29,9 +29,8 @@
 }
 
 .pagination__item:first-child {
-
-  .pagination__link{
-    background-image: url('../../icons/arrow-slider-left.svg');
+  .pagination__link {
+    background-image: url("../../icons/arrow-slider-left.svg");
     background-size: 10px 10px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -39,9 +38,8 @@
 }
 
 .pagination__item:last-child {
-
   .pagination__link {
-    background-image: url('../../icons/arrow-slider-right.svg');
+    background-image: url("../../icons/arrow-slider-right.svg");
     background-size: 10px 10px;
     background-repeat: no-repeat;
     background-position: center center;
