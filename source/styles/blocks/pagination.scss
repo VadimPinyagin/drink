@@ -8,18 +8,21 @@
   &__link {
     background-color: var(--base-white, #ffffff);
     display: block;
-    width: 40px;
-    color: var(--base-black, #333333);
+    min-width: 40px;
+    padding-block: 8px;
+    padding-inline: 8px;
+    color: var(--base-primary, #7859cf);
     text-decoration: none;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 24px;
     box-sizing: border-box;
     text-align: center;
   }
 
   &__link--current {
     background-color: transparent;
+    color: var(--base-black, #333333);
+    font-weight: 600;
   }
 }
 
