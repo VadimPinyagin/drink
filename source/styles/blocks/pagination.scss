@@ -3,7 +3,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 20px;
+  padding-block: 41px 44px;
 
   &__link {
     background-color: var(--base-white, #ffffff);
