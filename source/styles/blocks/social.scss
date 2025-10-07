@@ -1,0 +1,33 @@
+.social {
+  width: 320px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social__vk {
+  background-image: url("../../icons/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.social__pinterest {
+  background-image: url("../../icons/pinterest-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
+
+.social__ok {
+  background-image: url("../../icons/ok-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center;
+  width: 20px;
+  height: 20px;
+}
