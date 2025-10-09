@@ -1,12 +1,13 @@
 .main-nav {
-  width: 320px;
+  width: 280px;
   margin: auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 }
-
 .main-nav__group {
   display: flex;
+  justify-content: flex-end;
 }
 
 .main-nav--is-close {
@@ -26,6 +27,57 @@
     box-shadow: 0 5px 0 0 #000000, 0 10px 0 0 #000000;
   }
 }
+
+.main-nav--is-open {
+  align-items: center;
+  background-color: transparent;
+
+  .main-nav__btn {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 1px;
+      width: 16px;
+      height: 2px;
+      background-color: #000000;
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+
+  .main-nav__list {
+    @include list-reset;
+    background-color: var(--base-white, #ffffff);
+    grid-column: 1 / 4;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main-nav__item {
+  border-top: 1px solid var(--secondary-gray, #f0ebff);
+}
+
+  .main-nav__link {
+    @include link-reset;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    padding-block: 21px 19px;
+  }
+
 
 .main-nav__account {
   background-image: url("../../icons/account.svg");
