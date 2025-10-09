@@ -4,7 +4,7 @@ export function rangeSlider(){
 
     const formatForSlider = {
     from: function (formattedValue) {
-      return Number(formattedValue); // Преобразуем форматированное значение в число
+      return Number(formattedValue);z
     },
     to: function (numericValue) {
       return Math.round(numericValue); // Округляем число до ближайшего целого

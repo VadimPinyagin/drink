@@ -6,7 +6,7 @@
   padding-block: 8px 37px;
   position: relative;
 
-    &::after {
+  &::after {
     content: "";
     display: block;
     width: 100vh;
@@ -19,16 +19,15 @@
   }
 }
 
-.footer-nav {
-  &__title {
+.footer-nav__title {
   @include footer-title-style;
   letter-spacing: 0.03em;
   padding-block: 10px 10px;
 }
-  &__link {
-    @include footer-link-style;
-    letter-spacing: 0.02em;
-  }
+
+.footer-nav__link {
+  @include footer-link-style;
+  letter-spacing: 0.02em;
 }
 
 .footer {
