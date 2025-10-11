@@ -22,6 +22,8 @@
 @import "./blocks/footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/footer-nav.scss";
+@import "./blocks/swiper.scss";
 
 /* range */
-@import "../vendor/nouislider.min.css";
+@import "../vendor/nouislider/nouislider.min.css";
+@import "../vendor/swiper/swiper-bundle.min.css";
