@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="preload" href="fonts/Montserrat-Regular.woff" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
     <header class="header">
@@ -41,40 +41,61 @@
     </header>
     <main>
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-      <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img class="slider__card-image" width="280" height="280" src="images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены"></div>
-        <div class="swiper-slide"><img class="slider__card-image" width="280" height="280" src="images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены"></div>
-        <div class="swiper-slide"><img class="slider__card-image" width="280" height="280" src="images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены"></div>
-      </div>
+      <!-- </div>
         <div class="swiper-pagination"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-scrollbar"></div>
-      </div>
-      <section class="slider">
+      </div> -->
+      <section class="slider swiper">
         <h2 class="visually-hidden">Слайдер.Новинки</h2>
-        <button class="slider__button slider__arrow-left" type="button" aria-label="Листать в право"></button>
-        <div class="container slider__container">
-          <div class="slider-card slider__element">
+        <button class="slider__button slider__arrow-left swiper-button-prev" type="button" aria-label="Листать в право"></button>
+        <div class="container slider__container swiper-wrapper">
+          <div class="slider-card slider__element swiper-slide">
             <h3 class="slider-card__title">Декаф Флэт Уайт</h3>
             <picture>
-              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="#">
-              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="#">
-              <img class="slider__card-image" width="280" height="280" src="images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
+              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/flat-white-img-desktop@1x.webp 1x, images/swiper-images/flat-white-img-desktop@2x.webp 2x">
+              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/flat-white-img-desktop@1x.png 1x, images/swiper-images/flat-white-img-desktop@2x.png 2x">
+              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/flat-white-img-tablet@1x.webp 1x, images/swiper-images/flat-white-img-tablet@2x.webp 2x">
+              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/flat-white-img-tablet@1x.png 1x, images/swiper-images/flat-white-img-tablet@2x.png 2x">
+              <img class="slider__card-image" width="280" height="280" src="images/swiper-images/flat-white-img-mobile@1x.png" srcset="images/flat-white-img-mobile@1x.webp, images/swiper-images/flat-white-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
             </picture>
             <p class="slider-card__new">новинка!</p>
             <p class="slider-card__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
           </div>
-          <div class="slider-price">
+          <div class="slider-card slider__element swiper-slide">
+            <h3 class="slider-card__title">Декаф Флэт Уайт</h3>
+            <picture>
+              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/lavender-img-desktop@1x.webp 1x, images/swiper-images/lavender-img-desktop@2x.webp 2x">
+              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/lavender-img-desktop@1x.png 1x, images/swiper-images/lavender-img-desktop@2x.png 2x">
+              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/lavender-img-tablet@1x.webp 1x, images/swiper-images/lavender-img-tablet@2x.webp 2x">
+              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/lavender-img-tablet@1x.png 1x, images/swiper-images/lavender-img-tablet@2x.png 2x">
+              <img class="slider__card-image" width="280" height="280" src="images/swiper-images/lavender-img-mobile@1x.png" srcset="images/lavender-img-mobile@1x.webp, images/swiper-images/lavender-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
+            </picture>
+            <p class="slider-card__new">новинка!</p>
+            <p class="slider-card__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+          </div>
+          <div class="slider-card slider__element swiper-slide">
+            <h3 class="slider-card__title">Декаф Флэт Уайт</h3>
+            <picture>
+              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/espresso-img-desktop@1x.webp 1x, images/swiper-images/espresso-img-desktop@2x.webp 2x">
+              <source type="image/svg+xml" width="600" height="600" media="(min-width: 1440px)" srcset="images/swiper-images/espresso-img-desktop@1x.png 1x, images/swiper-images/espresso-img-desktop@2x.png 2x">
+              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/espresso-img-tablet@1x.webp 1x, images/swiper-images/espresso-img-tablet@2x.webp 2x">
+              <source type="image/svg+xml" width="476" height="476" media="(min-width: 768px)" srcset="images/swiper-images/espresso-img-tablet@1x.png 1x, images/swiper-images/espresso-img-tablet@2x.png 2x">
+              <img class="slider__card-image" width="280" height="280" src="images/swiper-images/espresso-img-mobile@1x.png" srcset="images/espresso-img-mobile@1x.webp, images/swiper-images/espresso-img-mobile@2x.webp 2x" alt="Decaf Flat White — кофейный напиток, в котором эспрессо без кофеина сочетается с тёплым молоком, взбитым до лёгкой бархатистой пены">
+            </picture>
+            <p class="slider-card__new">новинка!</p>
+            <p class="slider-card__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+          </div>
+        </div>
+        <button class="slider__button slider__arrow-right swiper-button-next" type="button" aria-label="Листать в лево"></button>
+        <div class="slider-price">
             <ul class="slider-price__list">
               <li class="slider-price__old">295&#8381;</li>
               <li class="slider-price__new">225&#8381;</li>
             </ul>
             <button class="button slider-price__button" type="button">Заказать</button>
-          </div>
         </div>
-        <button class="slider__button slider__arrow-right" type="button" aria-label="Листать в лево"></button>
       </section>
       <section class="advantages">
         <div class="container advantages__container">
@@ -188,11 +209,11 @@
                 <span class="poduct-card__price">225₽</span>
                 <button class="poduct-card__add-to-basket" type="button">В корзину</button>
                 <picture>
-                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-1@1x.webp, images/coffee-can-1@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-1@1x.png, images/coffee-can-1@2x.png 2x">
-                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-1@1x.webp, images/coffee-can-1@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-1@1x.png, images/coffee-can-1@2x.png 2x">
-                  <img class="poduct-card__image" width="130" height="188" src="images/coffee-can-1@1x.png" srcset="images/coffee-can-1@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-1@1x.webp, images/catalog-images/coffee-can-1@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-1@1x.png, images/catalog-images/coffee-can-1@2x.png 2x">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-1@1x.webp, images/catalog-images/coffee-can-1@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-1@1x.png, images/catalog-images/coffee-can-1@2x.png 2x">
+                  <img class="poduct-card__image" width="130" height="188" src="images/catalog-images/coffee-can-1@1x.png" srcset="images/catalog-images/coffee-can-1@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
                 </picture>
               </article>
             </li>
@@ -203,11 +224,11 @@
                 <span class="poduct-card__price">225₽</span>
                 <button class="poduct-card__add-to-basket" type="button">В корзину</button>
                 <picture>
-                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-2@1x.webp, images/coffee-can-2@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-2@1x.png, images/coffee-can-2@2x.png 2x">
-                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-2@1x.webp, images/coffee-can-2@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-2@1x.png, images/coffee-can-2@2x.png 2x">
-                  <img class="poduct-card__image" width="130" height="188" src="images/coffee-can-2@1x.png" srcset="images/coffee-can-2@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-2@1x.webp, images/catalog-images/coffee-can-2@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-2@1x.png, images/catalog-images/coffee-can-2@2x.png 2x">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-2@1x.webp, images/catalog-images/coffee-can-2@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-2@1x.png, images/catalog-images/coffee-can-2@2x.png 2x">
+                  <img class="poduct-card__image" width="130" height="188" src="images/catalog-images/coffee-can-2@1x.png" srcset="images/catalog-images/coffee-can-2@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
                 </picture>
               </article>
             </li>
@@ -218,11 +239,11 @@
                 <span class="poduct-card__price">225₽</span>
                 <button class="poduct-card__add-to-basket" type="button">В корзину</button>
                 <picture>
-                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-3@1x.webp, images/coffee-can-3@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-3@1x.png, images/coffee-can-3@2x.png 2x">
-                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-3@1x.webp, images/coffee-can-3@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-3@1x.png, images/coffee-can-3@2x.png 2x">
-                  <img class="poduct-card__image" width="130" height="188" src="images/coffee-can-3@1x.png" srcset="images/coffee-can-3@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-3@1x.webp, images/catalog-images/coffee-can-3@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-3@1x.png, images/catalog-images/coffee-can-3@2x.png 2x">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-3@1x.webp, images/catalog-images/coffee-can-3@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-3@1x.png, images/catalog-images/coffee-can-3@2x.png 2x">
+                  <img class="poduct-card__image" width="130" height="188" src="images/catalog-images/coffee-can-3@1x.png" srcset="images/catalog-images/coffee-can-3@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
                 </picture>
               </article>
             </li>
@@ -233,11 +254,11 @@
                 <span class="poduct-card__price">225₽</span>
                 <button class="poduct-card__add-to-basket" type="button">В корзину</button>
                 <picture>
-                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-4@1x.webp, images/coffee-can-4@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-4@1x.png, images/coffee-can-4@2x.png 2x">
-                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-4@1x.webp, images/coffee-can-4@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-4@1x.png, images/coffee-can-4@2x.png 2x">
-                  <img class="poduct-card__image" width="130" height="188" src="images/coffee-can-4@1x.png" srcset="images/coffee-can-4@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-4@1x.webp, images/catalog-images/coffee-can-4@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-4@1x.png, images/catalog-images/coffee-can-4@2x.png 2x">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-4@1x.webp, images/catalog-images/coffee-can-4@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-4@1x.png, images/catalog-images/coffee-can-4@2x.png 2x">
+                  <img class="poduct-card__image" width="130" height="188" src="images/catalog-images/coffee-can-4@1x.png" srcset="images/catalog-images/coffee-can-4@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
                 </picture>
               </article>
             </li>
@@ -248,11 +269,11 @@
                 <span class="poduct-card__price">225₽</span>
                 <button class="poduct-card__add-to-basket" type="button">В корзину</button>
                 <picture>
-                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-5@1x.webp, images/coffee-can-5@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-5@1x.png, images/coffee-can-5@2x.png 2x">
-                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-5@1x.webp, images/coffee-can-5@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-5@1x.png, images/coffee-can-5@2x.png 2x">
-                  <img class="poduct-card__image" width="130" height="188" src="images/coffee-can-5@1x.png" srcset="images/coffee-can-5@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-5@1x.webp, images/catalog-images/coffee-can-5@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-5@1x.png, images/catalog-images/coffee-can-5@2x.png 2x">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-5@1x.webp, images/catalog-images/coffee-can-5@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-5@1x.png, images/catalog-images/coffee-can-5@2x.png 2x">
+                  <img class="poduct-card__image" width="130" height="188" src="images/catalog-images/coffee-can-5@1x.png" srcset="images/catalog-images/coffee-can-5@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
                 </picture>
               </article>
             </li>
@@ -263,11 +284,11 @@
                 <span class="poduct-card__price">225₽</span>
                 <button class="poduct-card__add-to-basket" type="button">В корзину</button>
                 <picture>
-                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-6@1x.webp, images/coffee-can-6@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/coffee-can-6@1x.png, images/coffee-can-6@2x.png 2x">
-                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-6@1x.webp, images/coffee-can-6@2x.webp 2x">
-                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/coffee-can-6@1x.png, images/coffee-can-6@2x.png 2x">
-                  <img class="poduct-card__image" width="130" height="188" src="images/coffee-can-6@1x.png" srcset="images/coffee-can-6@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-6@1x.webp, images/catalog-images/coffee-can-6@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 1440px)" srcset="images/catalog-images/coffee-can-6@1x.png, images/catalog-images/coffee-can-6@2x.png 2x">
+                  <source type="image/webp" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-6@1x.webp, images/catalog-images/coffee-can-6@2x.webp 2x">
+                  <source type="image/png" width="130" height="188" media="(min-width: 768px)" srcset="images/catalog-images/coffee-can-6@1x.png, images/catalog-images/coffee-can-6@2x.png 2x">
+                  <img class="poduct-card__image" width="130" height="188" src="images/catalog-images/coffee-can-6@1x.png" srcset="images/catalog-images/coffee-can-6@2x.png 2x" alt="Декаф Флэт Уайт.Кофе без кофеина из Эфиопии с натуральным фермерским молоком">
                 </picture>
               </article>
             </li>
@@ -285,11 +306,11 @@
     <footer class="footer">
       <div class="footer__map">
         <picture>
-          <source type="image/webp" width="1440" height="540" media="(min-width: 1440px)" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
-          <source type="image/jpg" width="1440" height="540" media="(min-width: 1440px)" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
-          <source type="image/webp" width="768" height="480" media="(min-width: 768px)" srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp 2x">
-          <source type="image/jpg" width="768" height="480" media="(min-width: 768px)" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-          <img class="footer__map-image" width="320" height="420" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x" alt="Адрес на карте. Город Санкт-Петербург, набережная реки Карповки, дом 5">
+          <source type="image/webp" width="1440" height="540" media="(min-width: 1440px)" srcset="images/map-images/map-desktop@1x.webp 1x, images/map-images/map-desktop@2x.webp 2x">
+          <source type="image/jpg" width="1440" height="540" media="(min-width: 1440px)" srcset="images/map-images/map-desktop@1x.jpg 1x, images/map-images/map-desktop@2x.jpg 2x">
+          <source type="image/webp" width="768" height="480" media="(min-width: 768px)" srcset="images/map-images/map-tablet@1x.webp, images/map-images/map-tablet@2x.webp 2x">
+          <source type="image/jpg" width="768" height="480" media="(min-width: 768px)" srcset="images/map-images/map-tablet@1x.jpg 1x, images/map-images/map-tablet@2x.jpg 2x">
+          <img class="footer__map-image" width="320" height="420" src="images/map-images/map-mobile@1x.jpg" srcset="images/map-images/map-mobile@1x.webp 1x, images/map-images/map-mobile@2x.webp 2x" alt="Адрес на карте. Город Санкт-Петербург, набережная реки Карповки, дом 5">
         </picture>
       </div>
       <nav class="footer__nav footer-nav">
@@ -335,7 +356,7 @@
         </div>
       </nav>
     </footer>
-    <script src="./vendor/swiper/swiper-bundle.min.js" type="module"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./vendor/nouislider/nouislider.min.js" type="module"></script>
     <script src="./scripts/index.js" type="module"></script>
   </body>
