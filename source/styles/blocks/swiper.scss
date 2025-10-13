@@ -1,7 +1,25 @@
 .swiper {
+  position: relative;
+  background-color: var(--slider-background, #f3ebe1);
+  padding-block: 20px 51px;
 
   @media (min-width: $tablet-width) {
     width: 600px;
     height: 600px;
   }
+}
+
+.swiper__arrow-right {
+  @include slider-arrow;
+  background-image: url("../../icons/arrow-slider-right.svg");
+  right: 3px;
+  top: 318px;
+}
+
+.swiper__arrow-left {
+  @include slider-arrow;
+  background-image: url("../../icons/arrow-slider-left.svg");
+  background-repeat: no-repeat;
+  top: 318px;
+  left: 3px;
 }
