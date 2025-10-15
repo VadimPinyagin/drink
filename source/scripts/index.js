@@ -2,7 +2,14 @@
 import {rangeSlider} from './range-slider.js';
 import {mainNavOpenClose} from './moblie-nav.js';
 
-new Swiper('.swiper');
+new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});
 
 rangeSlider();
 mainNavOpenClose();

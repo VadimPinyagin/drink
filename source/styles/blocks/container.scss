@@ -1,4 +1,8 @@
 .container {
   width: 280px;
   margin: auto;
+
+  @media(min-width: $tablet-width) {
+    width: 728px;
+  }
 }

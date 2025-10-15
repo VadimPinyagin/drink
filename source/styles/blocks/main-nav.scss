@@ -4,16 +4,35 @@
   display: grid;
   grid-template-columns: auto 1fr;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 728px;
+    justify-items: start;
+    column-gap: 67px;
+  }
 }
 
 .main-nav__group {
   display: flex;
   justify-content: flex-end;
+
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .main-nav--is-close {
   .main-nav__list {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      @include list-reset;
+      display: flex;
+      grid-area: 1;
+      column-gap: 2px;
+      margin-inline-end: 61px;
+    }
   }
 
   .main-nav__btn::before {
@@ -50,6 +69,10 @@
     &::after {
       transform: rotate(-45deg);
     }
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
 
@@ -63,6 +86,15 @@
     z-index: 2;
     width: 100%;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      @include list-reset;
+      display: flex;
+      grid-area: 1;
+      column-gap: 2px;
+      margin-inline-end: 61px;
+    }
   }
 }
 
@@ -78,6 +110,11 @@
   line-height: 16px;
   font-weight: 500;
   padding-block: 21px 19px;
+
+  @media(min-width: $tablet-width) {
+    position: relative;
+    padding: 32px 20px;
+  }
 }
 
 .main-nav__account {
@@ -86,7 +123,6 @@
   background-size: 16px 16px;
   background-position: center;
   width: 60px;
-  height: 60px;
 }
 
 .main-nav__basket {
@@ -95,5 +131,15 @@
   background-size: 16px 16px;
   background-position: center;
   width: 60px;
-  height: 60px;
+}
+
+.main-nav__link--active::after {
+  content:"";
+  display: block;
+  position: absolute;
+  width: 101px;
+  height: 2px;
+  background-color: var(--base-primary, #7859cf);
+  bottom: 0;
+  left: 0;
 }

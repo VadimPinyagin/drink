@@ -5,4 +5,8 @@
   height: 60px;
   padding: 0;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
