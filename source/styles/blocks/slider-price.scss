@@ -3,6 +3,11 @@
   justify-content: center;
   column-gap: 20px;
   padding-block: 9px;
+  height: 58px;
+
+  @media(min-width:$tablet-width) {
+    grid-area: 1/1/1/1;
+  }
 }
 
 .slider-price__list {

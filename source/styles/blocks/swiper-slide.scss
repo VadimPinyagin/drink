@@ -5,6 +5,7 @@
 
   @media(min-width: $tablet-width) {
     grid-template-columns: 728px;
+    grid-template-rows: 16px 80px 96px auto;
     text-align: center;
   }
 }
@@ -18,6 +19,10 @@
   margin: 0;
   padding: 0;
   grid-area: 3/1;
+
+  @media(min-width: $tablet-width) {
+    grid-area: 2/1;
+  }
 }
 
 .swiper-slide__new {
@@ -29,10 +34,18 @@
   text-align: center;
   margin: 0;
   padding-block: 5px;
+
+  @media(min-width: $tablet-width) {
+    grid-area: 1/1;
+  }
 }
 
 .swiper-slide__description {
   text-align: center;
   margin: 0;
   padding-block: 10px;
+
+  @media(min-width: $tablet-width) {
+    grid-area: 3/1;
+  }
 }

@@ -30,12 +30,11 @@
   background-color: var(--base-primary, #7859cf);
 }
 
-@mixin slider-arrow {
+@mixin swiper-button {
   border: none;
   background-color: transparent;
-  width: 20px;
-  height: 656px;
   background-repeat: no-repeat;
+  padding: 0;
   position: absolute;
 }
 
