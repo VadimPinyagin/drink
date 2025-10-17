@@ -14,9 +14,3 @@ $desktop-width: 1440px;
   --swiper-navigation-top-offset: 22px;
   --swiper-navigation-sides-offset: 0;
 }
-
-@media (min-width: 768px) {
-  :root {
-    --swiper-navigation-top-offset: 12px;
-  }
-}

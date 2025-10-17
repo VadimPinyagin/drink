@@ -4,8 +4,8 @@
   grid-template-columns: 280px;
 
   @media(min-width: $tablet-width) {
-    grid-template-columns: 728px;
-    grid-template-rows: 16px 80px 96px auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, auto);
     text-align: center;
   }
 }
@@ -21,7 +21,13 @@
   grid-area: 3/1;
 
   @media(min-width: $tablet-width) {
-    grid-area: 2/1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    font-size: 56px;
+    line-height: 80px;
+    text-align: start;
+    padding-inline: 95px;
   }
 }
 
@@ -36,7 +42,12 @@
   padding-block: 5px;
 
   @media(min-width: $tablet-width) {
-    grid-area: 1/1;
+    grid-row-start: 1;
+    grid-column-start: 3;
+    text-align: start;
+    padding-block-start: 40px;
+    padding-inline-start: 20px;
+    letter-spacing: 0.04em;
   }
 }
 
@@ -46,6 +57,29 @@
   padding-block: 10px;
 
   @media(min-width: $tablet-width) {
-    grid-area: 3/1;
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 20px;
+    line-height: 32px;
+    padding-block: 16px 11px;
+    padding-inline-end: 39px;
   }
+}
+
+.swiper-slide__description br {
+  display: none;
+
+  @media(min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+picture:has(.swiper-slide__image) {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  margin-block-start: 70px;
+  margin-inline-end: 39px;
 }
