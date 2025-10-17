@@ -6,11 +6,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     width: auto;
-    background: linear-gradient(
-    to bottom,
-    var(--slider-background, #f3ebe1) 641px,
-    #ffffff 30%
-  );
+    background: linear-gradient(to bottom,var(--slider-background, #f3ebe1) 641px,#ffffff 30%);
+    padding-block-end: 0;
   }
 }
 

@@ -1,5 +1,9 @@
 .advantages {
   padding-block: 51px;
+
+  @media(min-width: $tablet-width) {
+    padding-block-start: 54px;
+  }
 }
 
 .advantages__title {
@@ -20,14 +24,29 @@
   line-height: 36px;
   text-align: center;
   padding-block: 5px;
+
+  @media(min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 .advantages-list {
   @include list-reset;
   display: flex;
   flex-direction: column;
-  row-gap: 30px;
+  gap: 30px;
   padding-block-start: 29px;
+
+  @media(min-width: $tablet-width) {
+    padding-block-start: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    //gap: 0;
+    column-gap: 30px;
+    row-gap: 58px;
+  }
 }
 
 .advantages-list__item {
@@ -35,6 +54,16 @@
   flex-direction: column;
   align-items: center;
   row-gap: 6px;
+
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 20px;
+    row-gap: 10px;
+    padding-block-start: 10px;
+    padding-inline-end: 5px;
+  }
 }
 
 .advantages-list__item--speed::before {
@@ -43,6 +72,9 @@
   width: 50px;
   height: 56px;
   background-image: url("../../icons/speed.svg");
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: start;
 }
 
 .advantages-list__item--comfort::before {
@@ -51,6 +83,9 @@
   width: 52px;
   height: 56px;
   background-image: url("../../icons/comfort.svg");
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: start;
 }
 
 .advantages-list__item--cheerfulness::before {
@@ -59,6 +94,9 @@
   width: 52px;
   height: 56px;
   background-image: url("../../icons/cheerfulness.svg");
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: start;
 }
 
 .advantages-list__item--ecology::before {
@@ -67,11 +105,9 @@
   width: 52px;
   height: 56px;
   background-image: url("../../icons/ecology.svg");
-}
-
-.advantages-list__item-text {
-  margin-block: 0;
-  text-align: center;
+  grid-column: 1;
+  grid-row: 1/3;
+  align-self: start;
 }
 
 .advantages-list__item-title {
@@ -79,4 +115,35 @@
   margin-block: 0;
   text-align: center;
   padding-block-start: 4px;
+
+  @media(min-width: $tablet-width) {
+    padding-block-start: 0;
+    font-size: 24px;
+    line-height: 36px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: start;
+    align-self: start;
+  }
+}
+
+.advantages-list__item-text br {
+  display: inline;
+
+  @media(min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.advantages-list__item-text {
+  margin-block: 0;
+  text-align: center;
+
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: start;
+  }
 }

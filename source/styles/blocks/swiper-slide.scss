@@ -27,7 +27,7 @@
     font-size: 56px;
     line-height: 80px;
     text-align: start;
-    padding-inline: 95px;
+    padding-inline: 85px;
   }
 }
 
@@ -45,8 +45,8 @@
     grid-row-start: 1;
     grid-column-start: 3;
     text-align: start;
-    padding-block-start: 40px;
-    padding-inline-start: 20px;
+    padding-block-start: 42px;
+    padding-inline-start: 11px;
     letter-spacing: 0.04em;
   }
 }
@@ -62,8 +62,8 @@
     grid-column-end: 6;
     font-size: 20px;
     line-height: 32px;
-    padding-block: 16px 11px;
-    padding-inline-end: 39px;
+    padding-block: 14px 11px;
+    padding-inline-end: 59px;
   }
 }
 
@@ -83,6 +83,6 @@ picture:has(.swiper-slide__image) {
     grid-column-start: 1;
     grid-column-end: 6;
     margin-block-start: 70px;
-    margin-inline-end: 39px;
+    margin-inline-end: 59px;
   }
 }
