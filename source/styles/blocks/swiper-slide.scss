@@ -76,10 +76,13 @@
 }
 
 picture:has(.swiper-slide__image) {
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 6;
-  margin-block-start: 70px;
-  margin-inline-end: 39px;
+
+  @media(min-width:$tablet-width) {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin-block-start: 70px;
+    margin-inline-end: 39px;
+  }
 }
