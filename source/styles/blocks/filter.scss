@@ -1,5 +1,11 @@
 .filter {
   padding-block-end: 41px;
+
+  @media(min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
 }
 
 .filter__price {
@@ -17,13 +23,24 @@
 .filter__price-from {
   grid-area: 2 / 1 / 2 / 1;
   width: 118px;
-  padding-block-start: 6px;
+  padding-block-start: 8px;
+
+  @media(min-width: $tablet-width) {
+    padding-block-start: 0;
+    width: 87px;
+  }
 }
 
 .filter__price-to {
   grid-area: 2 / 3 / 2 / 3;
   width: 118px;
-  padding-block-start: 6px;
+  padding-block-start: 8px;
+
+  @media(min-width: $tablet-width) {
+    padding-block-start: 0;
+    width: 87px;
+    margin-inline-end: 19px;
+  }
 }
 
 .filter__range .noUi-target {
@@ -34,6 +51,12 @@
   cursor: pointer;
   margin-block: 29px;
   grid-area: 1 / 1 / 2 / 4;
+
+  @media(min-width: $tablet-width) {
+    width: 213px;
+    margin-block-end: 31px;
+    margin-inline-start: 8px;
+  }
 }
 
 .filter__range .noUi-connect {
@@ -70,6 +93,12 @@
   top: 26px;
   left: 18px;
   background-color: var(--base-gray, #bdbdbd);
+
+  @media(min-width: $tablet-width) {
+    top: 19px;
+    left: 8px;
+  }
+
 }
 
 .filter__price-range {
@@ -84,6 +113,10 @@
   color: var(--base-gray, #bdbdbd);
   font-size: 16px;
   line-height: 24px;
+
+  @media(min-width: $tablet-width) {
+    width: 87px;
+  }
 }
 
 .filter__additive {
@@ -187,6 +220,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
+  @media(min-width: $tablet-width) {
+    padding-inline-start: 10px;
+  }
 }
 
 .filter__country-item {
@@ -203,6 +240,16 @@
   flex-direction: column;
   row-gap: 20px;
 
+  @media(min-width: $tablet-width) {
+    justify-content: center;
+    flex-direction: row;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-block-start: 10px;
+    column-gap: 20px;
+  }
+
   .filter__country-button {
     border: none;
     border-radius: 4px;
@@ -211,6 +258,7 @@
     font-size: 16px;
     line-height: 24px;
     height: 40px;
+    padding-inline: 20px;
   }
 
   .filter__country-button[type="submit"] {

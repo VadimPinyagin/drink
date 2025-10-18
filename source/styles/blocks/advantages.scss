@@ -46,10 +46,6 @@
     column-gap: 30px;
     row-gap: 27px;
     padding-block-start: 55px;
-
-    // padding-block-start: 55px;
-    // padding-inline-start: 2px;
-    // column-gap: 28px;
   }
 }
 
@@ -60,11 +56,6 @@
   row-gap: 6px;
 
   @media(min-width: $tablet-width) {
-    // display: grid;
-    // grid-template-columns: repeat(3, auto);
-    // grid-template-rows: repeat(2, auto);
-    // row-gap: 10px;
-    // column-gap: 20px;
     padding-inline-start: 72px;
     row-gap: 10px;
   }
