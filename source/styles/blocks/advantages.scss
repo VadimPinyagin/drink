@@ -35,18 +35,16 @@
   @include list-reset;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  padding-block-start: 29px;
 
-  @media(min-width: $tablet-width) {
-    padding-block-start: 28px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    //gap: 0;
-    column-gap: 30px;
-    row-gap: 58px;
-  }
+  // @media(min-width: $tablet-width) {
+  //   padding-block-start: 28px;
+  //   display: grid;
+  //   grid-template-columns: repeat(2, 1fr);
+  //   grid-template-rows: repeat(2, 1fr);
+  //   padding-block-start: 55px;
+  //   padding-inline-start: 2px;
+  //   column-gap: 28px;
+  // }
 }
 
 .advantages-list__item {
@@ -55,59 +53,29 @@
   align-items: center;
   row-gap: 6px;
 
-  @media(min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
-    column-gap: 20px;
-    row-gap: 10px;
-    padding-block-start: 10px;
-    padding-inline-end: 5px;
-  }
+  // @media(min-width: $tablet-width) {
+  //   display: grid;
+  //   grid-template-columns: repeat(3, auto);
+  //   grid-template-rows: repeat(2, auto);
+  //   row-gap: 10px;
+  //   column-gap: 20px;
+  // }
 }
 
-.advantages-list__item--speed::before {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 56px;
-  background-image: url("../../icons/speed.svg");
-  grid-column: 1;
-  grid-row: 1/3;
-  align-self: start;
+.advantages-list__item--speed {
+  background: url("../../icons/speed.svg") no-repeat top center / 52px 56px;
 }
 
-.advantages-list__item--comfort::before {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 56px;
-  background-image: url("../../icons/comfort.svg");
-  grid-column: 1;
-  grid-row: 1/3;
-  align-self: start;
+.advantages-list__item--comfort {
+  background: url("../../icons/comfort.svg") no-repeat top center / 52px 56px;
 }
 
-.advantages-list__item--cheerfulness::before {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 56px;
-  background-image: url("../../icons/cheerfulness.svg");
-  grid-column: 1;
-  grid-row: 1/3;
-  align-self: start;
+.advantages-list__item--cheerfulness {
+  background: url("../../icons/cheerfulness.svg") no-repeat top center / 52px 56px;
 }
 
-.advantages-list__item--ecology::before {
-  content: "";
-  display: block;
-  width: 52px;
-  height: 56px;
-  background-image: url("../../icons/ecology.svg");
-  grid-column: 1;
-  grid-row: 1/3;
-  align-self: start;
+.advantages-list__item--ecology{
+  background: url("../../icons/ecology.svg") no-repeat top center / 52px 56px;
 }
 
 .advantages-list__item-title {
