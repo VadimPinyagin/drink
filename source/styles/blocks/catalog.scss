@@ -45,4 +45,11 @@
   flex-direction: column;
   gap: 19px;
   padding-block-start: 14px;
+
+  @media(min-width: $tablet-width) {
+    padding-block: 25px 29px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 30px;
+  }
 }
