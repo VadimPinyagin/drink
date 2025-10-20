@@ -4,7 +4,7 @@
   grid-template-columns: 280px;
 
   @media(min-width: $tablet-width) {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 728px;
     grid-template-rows: repeat(5, auto);
     text-align: center;
   }
@@ -43,8 +43,6 @@
 
   @media(min-width: $tablet-width) {
     grid-row-start: 1;
-    grid-column-start: 3;
-    text-align: start;
     padding-block-start: 42px;
     padding-inline-start: 11px;
     letter-spacing: 0.04em;
@@ -63,7 +61,7 @@
     font-size: 20px;
     line-height: 32px;
     padding-block: 14px 11px;
-    padding-inline-end: 59px;
+    max-width: 708px;
   }
 }
 
@@ -84,5 +82,7 @@ picture:has(.swiper-slide__image) {
     grid-column-end: 6;
     margin-block-start: 70px;
     margin-inline-end: 59px;
+    text-align: start;
+    padding-inline-start: 116px;
   }
 }
