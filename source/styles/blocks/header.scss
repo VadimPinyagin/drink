@@ -1,4 +1,19 @@
-// .header__logo {
-//   padding-inline: 20px;
-//   padding-block-start: 12px;
-// }
+.header__logo {
+  @media (min-width: $desktop-width) {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+}
+
+.header__logo span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

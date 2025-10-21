@@ -10,6 +10,12 @@
     justify-items: start;
     column-gap: 67px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+    display: flex;
+    column-gap: 164px;
+  }
 }
 
 .main-nav__group {
@@ -32,6 +38,11 @@
       grid-area: 1;
       column-gap: 2px;
       margin-inline-end: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      column-gap: 22px;
+      margin-inline-end: 160px;
     }
   }
 
@@ -95,6 +106,11 @@
       column-gap: 2px;
       margin-inline-end: 61px;
     }
+
+    @media (min-width: $desktop-width) {
+      column-gap: 22px;
+      margin-inline-end: 160px;
+    }
   }
 }
 
@@ -117,20 +133,77 @@
   }
 }
 
-.main-nav__account {
-  background-image: url("../../icons/account.svg");
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center;
+.main-nav__account,
+.main-nav__basket {
+  @include link-reset;
   width: 60px;
+  height: 60px;
+  position: relative;
+
+  @media(min-width: $desktop-width) {
+    font-size: 12px;
+    line-height: 16px;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+}
+
+.main-nav__account {
+  @media(min-width: $desktop-width) {
+    padding-inline: 22px 22px;
+    margin-inline-end: 18px;
+  }
 }
 
 .main-nav__basket {
+
+  @media(min-width: $desktop-width) {
+    padding-inline: 22px 22px;
+  }
+}
+
+.main-nav__account::before {
+  background-image: url("../../icons/account.svg");
+}
+
+.main-nav__basket::before {
   background-image: url("../../icons/product-basket.svg");
+}
+
+.main-nav__account::before,
+.main-nav__basket::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center;
-  width: 60px;
+  left: 22px;
+  top: 22px;
+
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
+
+  @media(min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.main-nav__account-enter,
+.main-nav__basket-enter {
+  display: none;
+
+  @media(min-width: $desktop-width) {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 
 .main-nav__link--active::after {
