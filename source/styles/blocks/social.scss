@@ -17,12 +17,12 @@
     right: 0;
     bottom: 10px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       display: none;
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: auto;
     padding-block: 29px 17px;
   }
@@ -38,7 +38,7 @@
   justify-content: space-between;
   column-gap: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-block-start: 5px;
   }
 }

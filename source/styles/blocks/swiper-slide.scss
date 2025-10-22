@@ -3,7 +3,7 @@
   grid-template-rows: repeat(5, auto);
   grid-template-columns: 280px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-template-columns: 728px;
     grid-template-rows: repeat(5, auto);
     text-align: center;
@@ -20,9 +20,8 @@
   padding: 0;
   grid-area: 3/1;
 
-  @media(min-width: $tablet-width) {
-    grid-column-start: 1;
-    grid-column-end: 6;
+  @media (min-width: $tablet-width) {
+    grid-column: 1/6;
     grid-row-start: 2;
     font-size: 56px;
     line-height: 80px;
@@ -41,7 +40,7 @@
   margin: 0;
   padding-block: 5px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-row-start: 1;
     padding-block-start: 42px;
     padding-inline-start: 11px;
@@ -54,10 +53,9 @@
   margin: 0;
   padding-block: 10px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     grid-row-start: 3;
-    grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column: 1/6;
     font-size: 20px;
     line-height: 32px;
     padding-block: 14px 11px;
@@ -68,18 +66,15 @@
 .swiper-slide__description br {
   display: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: inline;
   }
 }
 
 picture:has(.swiper-slide__image) {
-
-  @media(min-width:$tablet-width) {
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 1;
-    grid-column-end: 6;
+  @media (min-width: $tablet-width) {
+    grid-row: 4/5;
+    grid-column: 1/6;
     margin-block-start: 70px;
     margin-inline-end: 59px;
     text-align: start;

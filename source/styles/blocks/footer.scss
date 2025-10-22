@@ -3,15 +3,13 @@
 }
 
 .footer__container {
-
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 728px;
   }
 }
 
-.footer__social{
-
-  @media(min-width: $tablet-width) {
+.footer__social {
+  @media (min-width: $tablet-width) {
     column-gap: 380px;
     grid-row: 1;
     grid-column: 1 / 4;

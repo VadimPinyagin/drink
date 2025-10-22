@@ -1,5 +1,4 @@
 .footer-nav {
-
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: repeat(3, auto);
@@ -36,6 +35,10 @@
   @include footer-title-style;
   letter-spacing: 0.03em;
   padding-block: 10px 10px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+  }
 }
 
 .footer-nav__link {
@@ -53,68 +56,59 @@
 }
 
 .footer__contacts-address {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
-    font-style: normal;
-    font-weight: 400;
-    color: inherit;
-    margin: 0;
-    padding-inline: 20px;
-    padding-block: 11px 16px;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: inherit;
+  margin: 0;
+  padding-inline: 20px;
+  padding-block: 11px 16px;
 
-    &::before {
-      position: absolute;
-      left: -3px;
-      content: "";
-      display: block;
-      width: 28px;
-      height: 16px;
-      background-image: url("../../icons/address-icon.svg");
-      background-repeat: no-repeat;
-      background-size: 20px 16px;
-    }
+  &::before {
+    position: absolute;
+    left: -3px;
+    content: "";
+    display: block;
+    width: 28px;
+    height: 16px;
+    background-image: url("../../icons/address-icon.svg");
+    background-repeat: no-repeat;
+    background-size: 20px 16px;
   }
+}
 
 .footer__contacts-phone {
-    position: relative;
-    font-size: 14px;
-    line-height: 20px;
-    font-style: normal;
-    font-weight: 400;
-    color: inherit;
-    margin: 0;
-    padding-inline: 20px;
-    padding-block-start: 11px;
-    text-decoration: none;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  color: inherit;
+  margin: 0;
+  padding-inline: 20px;
+  padding-block-start: 11px;
+  text-decoration: none;
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 13px;
-      height: 16px;
-      background-image: url("../../icons/phone-icon.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
-.footer-nav__title {
-
-  @media (min-width: $tablet-width) {
-    grid-row: 2;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 13px;
+    height: 16px;
+    background-image: url("../../icons/phone-icon.svg");
+    background-repeat: no-repeat;
   }
 }
 
 .footer-nav__title:first-of-type {
-
   @media (min-width: $tablet-width) {
     padding-inline-end: 105px;
   }
 }
 
 .footer-nav__title:last-of-type {
-
   @media (min-width: $tablet-width) {
     padding-inline-start: 73px;
   }

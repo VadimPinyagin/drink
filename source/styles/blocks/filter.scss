@@ -1,7 +1,7 @@
 .filter {
   padding-block-end: 41px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
@@ -25,7 +25,7 @@
   width: 118px;
   padding-block-start: 8px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-block-start: 0;
     width: 87px;
   }
@@ -36,7 +36,7 @@
   width: 118px;
   padding-block-start: 8px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-block-start: 0;
     width: 87px;
     margin-inline-end: 19px;
@@ -52,7 +52,7 @@
   margin-block: 29px;
   grid-area: 1 / 1 / 2 / 4;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 213px;
     margin-block-end: 31px;
     margin-inline-start: 8px;
@@ -94,11 +94,10 @@
   left: 18px;
   background-color: var(--base-gray, #bdbdbd);
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     top: 19px;
     left: 8px;
   }
-
 }
 
 .filter__price-range {
@@ -114,7 +113,7 @@
   font-size: 16px;
   line-height: 24px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 87px;
   }
 }
@@ -221,7 +220,7 @@
   flex-direction: column;
   row-gap: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-inline-start: 10px;
   }
 }
@@ -240,12 +239,11 @@
   flex-direction: column;
   row-gap: 20px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     justify-content: center;
     flex-direction: row;
     grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column: 1/4;
     padding-block-start: 10px;
     column-gap: 20px;
   }

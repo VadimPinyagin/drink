@@ -6,7 +6,7 @@
   gap: 20px;
   padding-block: 43px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     justify-content: end;
     margin-inline-end: 3px;
     padding-block-end: 89px;
@@ -42,8 +42,8 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @media(min-width: $tablet-width) {
-      background-image:none;
+    @media (min-width: $tablet-width) {
+      background-image: none;
       padding-inline: 18px;
     }
   }
@@ -56,17 +56,17 @@
     background-repeat: no-repeat;
     background-position: center center;
 
-    @media(min-width: $tablet-width) {
-      background-image:none;
+    @media (min-width: $tablet-width) {
+      background-image: none;
       padding-inline: 18px;
     }
   }
 }
 
-.pagination__link span{
+.pagination__link span {
   display: none;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: inline;
   }
 }

@@ -4,7 +4,7 @@
 }
 
 .catalog__container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     width: 728px;
   }
 }
@@ -19,7 +19,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-block: 22px 0;
   }
 }
@@ -32,7 +32,7 @@
   line-height: 36px;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 76px;
     padding-block-end: 15px;
@@ -46,7 +46,7 @@
   gap: 19px;
   padding-block-start: 14px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-block: 25px 29px;
     display: grid;
     grid-template-columns: repeat(2, auto);

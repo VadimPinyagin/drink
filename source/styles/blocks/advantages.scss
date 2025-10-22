@@ -1,9 +1,8 @@
 .advantages {
   padding-block: 51px;
 
-  @media(min-width: $tablet-width) {
-    padding-block-start: 54px;
-    padding-block-end: 98px;
+  @media (min-width: $tablet-width) {
+    padding-block: 54px 98px;
   }
 }
 
@@ -26,7 +25,7 @@
   text-align: center;
   padding-block: 5px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 64px;
   }
@@ -39,12 +38,11 @@
   padding-block-start: 29px;
   row-gap: 31px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: 30px;
-    row-gap: 27px;
+    gap: 27px 30px;
     padding-block-start: 55px;
   }
 }
@@ -55,7 +53,7 @@
   align-items: center;
   row-gap: 6px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-inline-start: 72px;
     row-gap: 10px;
   }
@@ -64,7 +62,7 @@
 .advantages-list__item--speed {
   background: url("../../icons/speed.svg") no-repeat top center / 52px 56px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-position: top left;
   }
 }
@@ -72,7 +70,7 @@
 .advantages-list__item--comfort {
   background: url("../../icons/comfort.svg") no-repeat top center / 52px 56px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-position: top left;
   }
 }
@@ -80,15 +78,15 @@
 .advantages-list__item--cheerfulness {
   background: url("../../icons/cheerfulness.svg") no-repeat top center / 52px 56px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-position: top left;
   }
 }
 
-.advantages-list__item--ecology{
+.advantages-list__item--ecology {
   background: url("../../icons/ecology.svg") no-repeat top center / 52px 56px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     background-position: top left;
   }
 }
@@ -99,12 +97,11 @@
   text-align: center;
   padding-block-start: 65px;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-block-start: 0;
     font-size: 24px;
     line-height: 36px;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: 2/4;
     text-align: start;
     align-self: start;
   }
@@ -112,25 +109,26 @@
 
 .advantages-list__item-text br {
   display: inline;
-  @media(min-width: $tablet-width) {
+
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .advantages-list__item--ecology .advantages-list__item-text br {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: inline;
   }
 }
+
 .advantages-list__item-text {
   margin-block: 0;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column: 2/4;
     text-align: start;
   }
 }
