@@ -140,6 +140,10 @@
   height: 60px;
   position: relative;
 
+  &:active {
+    background-color: #F0EBFF;
+  }
+
   @media(min-width: $desktop-width) {
     font-size: 12px;
     line-height: 16px;
@@ -161,7 +165,7 @@
 .main-nav__basket {
 
   @media(min-width: $desktop-width) {
-    padding-inline: 22px 22px;
+    padding-inline: 24px 0;
   }
 }
 
