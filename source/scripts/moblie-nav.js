@@ -10,7 +10,6 @@ export function mainNavOpenClose(){
     btnBurger.addEventListener('click', () => {
       mainNav.classList.toggle('main-nav--is-open');
       mainNav.classList.toggle('main-nav--is-close');
-      console.log("Меню работает");
     });
   }
 }

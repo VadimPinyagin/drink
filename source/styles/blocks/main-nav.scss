@@ -143,36 +143,50 @@
     background-color: var(--base-primary-active, #f0ebff);
   }
 
+  @media (min-width: $tablet-width) {
+    height: auto;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 12px;
     line-height: 16px;
     width: auto;
-    height: auto;
     display: flex;
     align-items: center;
     column-gap: 8px;
+    padding-inline: 22px;
+
+    &:hover {
+      color: var(--base-primary, #7859cf);
+      &::before {
+        background-color: var(--base-primary, #7859cf);
+        color: var(--base-primary, #7859cf);
+      }
+    }
+
+    &:active {
+      color: var(--base-primary, #7859cf);
+      &::before {
+        background-color: var(--base-primary, #7859cf);
+      }
+    }
   }
 }
 
 .main-nav__account {
   @media (min-width: $desktop-width) {
-    padding-inline: 22px 22px;
     margin-inline-end: 18px;
   }
 }
 
-.main-nav__basket {
-  @media (min-width: $desktop-width) {
-    padding-inline: 24px 0;
-  }
-}
-
 .main-nav__account::before {
-  background-image: url("../../icons/account.svg");
+  mask-image: url("../../icons/account.svg");
+  mask-repeat: no-repeat;
 }
 
 .main-nav__basket::before {
-  background-image: url("../../icons/product-basket.svg");
+  mask-image: url("../../icons/product-basket.svg");
+  mask-repeat: no-repeat;
 }
 
 .main-nav__account::before,
@@ -180,13 +194,11 @@
   content: "";
   display: block;
   position: absolute;
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  background-size: 16px 16px;
-  background-position: center;
   left: 22px;
   top: 22px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--base-black, #333333);
 
   @media (min-width: $tablet-width) {
     top: 32px;
